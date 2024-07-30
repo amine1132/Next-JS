@@ -26,30 +26,25 @@ export default function Home() {
         <p className="text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter">
           Blockchains encyclopedia
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center gap-[30px] bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+          <a href="https://x.com/Encyclochain" target="_blank">
             <Image
-              src="/vercel.svg"
+              src={twitter}
               alt="Vercel Logo"
               className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
+              width={20}
               height={24}
               priority
             />
           </a>
+          <Image
+            src={discord}
+            alt="Vercel Logo"
+            className="dark:invert"
+            width={20}
+            height={24}
+            priority
+          />
         </div>
       </div>
 
@@ -74,7 +69,10 @@ export default function Home() {
           <h2>Contribute?</h2>
           <ul className="list-disc pl-[40px]">
             <li className="w-full max-w-[493px] text-gray-900 font-sans text-base font-light normal-case not-italic no-underline leading-relaxed tracking-normal">
-              <a href="#donation">Donation</a> to help our initiative to grow
+              <a href="#donation" className="text-red-500">
+                Donation
+              </a>
+              to help our initiative to grow
             </li>
             <li className="w-full max-w-[493px] text-gray-900 font-sans text-base font-light normal-case not-italic no-underline leading-relaxed tracking-normal">
               Suggestions and ressources on telegram
@@ -136,6 +134,25 @@ export default function Home() {
             blockchains and other field in the future. Beginner, confirmed,
             developer and more you will find your need.
           </p>
+          <div className="flex gap-[15px] mt-[20px]">
+            {" "}
+            <Image
+              src={twitter}
+              alt="Avalanche Logo"
+              className="dark:invert"
+              width={20}
+              height={24}
+              priority
+            />
+            <Image
+              src={discord}
+              alt="Avalanche Logo"
+              className="dark:invert"
+              width={20}
+              height={24}
+              priority
+            />
+          </div>
         </div>
 
         <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors w-[900px]">
@@ -150,7 +167,7 @@ export default function Home() {
             fastest one will be on telegram or twitter
           </p>
           <ul className="flex flex-col">
-            <li className="flex">
+            <li className="flex gap-[10px] ">
               <Image
                 src={twitter}
                 alt="Avalanche Logo"
@@ -159,26 +176,32 @@ export default function Home() {
                 height={24}
                 priority
               />
-              <a href="https://x.com/Encyclochain">Encyclochain</a>
+              <a href="https://x.com/Encyclochain" target="_blank">
+                Encyclochain
+              </a>
             </li>
-            <Image
-              src={discord}
-              alt="Avalanche Logo"
-              className="dark:invert"
-              width={13}
-              height={24}
-              priority
-            />
-            <li>Encyclochain</li>
-            <Image
-              src={mail}
-              alt="Avalanche Logo"
-              className="dark:invert"
-              width={13}
-              height={24}
-              priority
-            />
-            <li>encyclochain@gmail.com</li>
+            <li className="flex gap-[10px]">
+              <Image
+                src={discord}
+                alt="Avalanche Logo"
+                className="dark:invert"
+                width={13}
+                height={24}
+                priority
+              />
+              Encyclochain
+            </li>
+            <li className="flex gap-[10px] ">
+              <Image
+                src={mail}
+                alt="Avalanche Logo"
+                className="dark:invert"
+                width={13}
+                height={24}
+                priority
+              />
+              encyclochain@gmail.com
+            </li>
           </ul>
         </div>
       </div>
