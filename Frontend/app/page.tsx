@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/accordion";
 
 import { AccordionDemo } from "../utils/page/Accordion";
-import { Footer } from "@/utils/page/Footer";
 
 export default function Home() {
   return (
@@ -130,7 +129,6 @@ export default function Home() {
           <Button className="bg-[#E84142] rounded-sm">Explore</Button>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
