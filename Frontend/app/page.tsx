@@ -15,7 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { AccordionDemo } from "../utils/page/Accordion";
+import { AccordionDemo } from "../components/Accordion";
 
 export default function Home() {
   return (

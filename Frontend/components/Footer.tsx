@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { AccordionDemo } from "./Accordion";
-import twitter from "../../assets/Social/twitter.svg";
-import discord from "../../assets/Social/Discord.svg";
-import mail from "../../assets/Social/mail.svg";
+import twitter from "../assets/Social/twitter.svg";
+import discord from "../assets/Social/Discord.svg";
+import mail from "../assets/Social/mail.svg";
 
 export function Footer() {
   return (
