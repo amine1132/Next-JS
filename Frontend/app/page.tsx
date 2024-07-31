@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { AccordionDemo } from "../utils/page/Accordion";
+import { Footer } from "@/utils/page/Footer";
 
 export default function Home() {
   return (
@@ -129,85 +130,7 @@ export default function Home() {
           <Button className="bg-[#E84142] rounded-sm">Explore</Button>
         </div>
       </div>
-      <div className=" flex w-full justify-between">
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          <h2 className="mb-[40px] text-2xl font-semibold">EC</h2>
-          <p className="m-0 max-w-[500px]">
-            Blockchains encyclopedia that regroup ressources for every
-            blockchains and other field in the future. Beginner, confirmed,
-            developer and more you will find your need.
-          </p>
-          <div className="flex gap-[15px] mt-[20px]">
-            {" "}
-            <Image
-              src={twitter}
-              alt="Avalanche Logo"
-              className="dark:invert"
-              width={20}
-              height={24}
-              priority
-            />
-            <Image
-              src={discord}
-              alt="Avalanche Logo"
-              className="dark:invert"
-              width={20}
-              height={24}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors w-[900px]">
-          <h2 className="mb-3 text-2xl font-semibold text-center">Donation </h2>
-          <AccordionDemo />
-        </div>
-
-        <div className="group rounded-lg border border-transparent px-5 py-4 gap-[30px] flex flex-col">
-          <h2 className="mb-3 text-2xl font-semibold text-center">Contact</h2>
-          <p className="m-0 max-w-[500px]">
-            You have 3 options to contact us twitter, telegram or e-mail. The
-            fastest one will be on telegram or twitter
-          </p>
-          <ul className="flex flex-col">
-            <li className="flex gap-[10px] ">
-              <Image
-                src={twitter}
-                alt="Avalanche Logo"
-                className="dark:invert"
-                width={13}
-                height={24}
-                priority
-              />
-              <a href="https://x.com/Encyclochain" target="_blank">
-                Encyclochain
-              </a>
-            </li>
-            <li className="flex gap-[10px]">
-              <Image
-                src={discord}
-                alt="Avalanche Logo"
-                className="dark:invert"
-                width={13}
-                height={24}
-                priority
-              />
-              Encyclochain
-            </li>
-            <li className="flex gap-[10px] ">
-              <Image
-                src={mail}
-                alt="Avalanche Logo"
-                className="dark:invert"
-                width={13}
-                height={24}
-                priority
-              />
-              encyclochain@gmail.com
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Footer />
     </main>
   );
 }
