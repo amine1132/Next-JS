@@ -16,18 +16,19 @@ import {
 } from "@/components/ui/accordion";
 
 import { AccordionDemo } from "../components/Accordion";
+import { AccordionHeader } from "../components/AccordionHeader";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="z-10 w-full items-center p-[20px] justify-between font-mono text-sm lg:flex">
+      <div className="z-10 w-full items-center p-[20px] justify-between font-mono text-sm flex">
         <p className="text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter">
           Encyclochain
         </p>
-        <p className="text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter">
+        <p className="text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
           Blockchains encyclopedia
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center gap-[30px] bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+        <div className="flex items-end  gap-[30px] ">
           <a href="https://x.com/Encyclochain" target="_blank">
             <Image
               src={twitter}
@@ -48,8 +49,10 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <div className=" w-full  flex flex gap-[150px] pt-[5%] pb-0 pl-[5%] pr-[5%]">
+      <div className="w-full p-[20px] lg:hidden">
+        <AccordionHeader />
+      </div>
+      <div className=" w-full  flex flex gap-[150px] pt-[5%] pb-0 pl-[5%] pr-[5%] max-lg:hidden">
         <div className="flex flex-col gap-[25px] ">
           <h2>What?</h2>
           <p className="w-full max-w-[520px] text-gray-800 font-sans text-base font-light normal-case not-italic no-underline leading-normal tracking-normal">
@@ -81,8 +84,11 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="mt-[5%] mb-[5%] flex w-full justify-between p-[50px]">
-        <div className="flex flex-col items-center gap-[20px] w-[25%]">
+      <p className="text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline  mt-[20px] leading-tight tracking-tighter lg:hidden">
+        Blockchains encyclopedia
+      </p>
+      <div className="mt-[5%] mb-[5%] flex w-full justify-between p-[50px] max-md:flex-wrap">
+        <div className="flex flex-col items-center gap-[20px] w-[25%] max-md:w-[50%]">
           <Image
             src={Bitcoin}
             alt="Bitcoin Logo"
@@ -95,7 +101,7 @@ export default function Home() {
             <Link href="/blockchains">Explore</Link>
           </Button>
         </div>
-        <div className="flex flex-col items-center gap-[20px] w-[25%]">
+        <div className="flex flex-col items-center gap-[20px] w-[25%] max-md:w-[50%]">
           <Image
             src={Eth}
             alt="Eth Logo"
@@ -106,7 +112,7 @@ export default function Home() {
           />
           <Button className="bg-[#627EEA] rounded-sm">Explore</Button>
         </div>
-        <div className="flex flex-col items-center gap-[20px] w-[25%]">
+        <div className="flex flex-col items-center gap-[20px] w-[25%] max-md:w-[50%]">
           <Image
             src={Solana}
             alt="Solana Logo"
@@ -117,7 +123,7 @@ export default function Home() {
           />
           <Button className="bg-[#000000] rounded-sm">Explore</Button>
         </div>
-        <div className="flex flex-col items-center gap-[20px] w-[25%]">
+        <div className="flex flex-col items-center gap-[20px] w-[25%] max-md:w-[50%]">
           <Image
             src={Avalanche}
             alt="Avalanche Logo"

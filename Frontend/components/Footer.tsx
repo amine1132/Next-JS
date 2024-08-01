@@ -6,8 +6,8 @@ import mail from "../assets/Social/mail.svg";
 
 export function Footer() {
   return (
-    <div className="flex w-full justify-between gap-[30px]">
-      <div className="px-5 py-4 flex flex-col gap-[30px] w-[400px] flex-1 min-h-[200px]">
+    <div className="flex w-full justify-between gap-[30px] max-md:flex-col">
+      <div className="px-5 py-4 flex flex-col gap-[30px] w-full flex-1 min-h-[200px]">
         <h2 className="mb-[40px] text-2xl font-semibold">EC</h2>
         <p className="m-0">
           Blockchains encyclopedia that regroup ressources for every blockchains
