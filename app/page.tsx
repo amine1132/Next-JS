@@ -25,7 +25,7 @@ export default function Home() {
         <p className="font-garamond text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter">
           Encyclochain
         </p>
-        <p className=" font-garamond text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
+        <p className=" font-garamond text-gray-900 font-serif text-3xl w-full text-center font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
           Blockchains encyclopedia
         </p>
         <div className="flex items-end  gap-[30px] ">
