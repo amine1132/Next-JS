@@ -20,6 +20,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        garamond: ["EB Garamond", "serif"],
+        poppins: ["Poppins", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
