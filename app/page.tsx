@@ -17,6 +17,7 @@ import {
 
 import { AccordionDemo } from "../components/Accordion";
 import { AccordionHeader } from "../components/AccordionHeader";
+import CryptoWidget from "../components/CryptoWidget";
 
 export default function Home() {
   return (
@@ -25,9 +26,7 @@ export default function Home() {
         <p className="font-garamond text-gray-900 font-serif text-3xl font-medium normal-case not-italic no-underline leading-tight tracking-tighter">
           Encyclochain
         </p>
-        <p className=" font-garamond text-gray-900 font-serif text-3xl w-full text-center font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
-          Blockchains encyclopedia
-        </p>
+        <CryptoWidget />
         <div className="flex items-end  gap-[30px] ">
           <a href="https://x.com/Encyclochain" target="_blank">
             <Image
@@ -52,6 +51,9 @@ export default function Home() {
       <div className="w-full p-[20px] lg:hidden">
         <AccordionHeader />
       </div>
+      <p className=" font-garamond text-gray-900 font-serif text-3xl w-full text-center font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
+        Blockchains encyclopedia
+      </p>
       <div className=" w-full  flex flex gap-[150px] pt-[5%] pb-0 pl-[5%] pr-[5%] max-lg:hidden">
         <div className="flex flex-col gap-[25px] ">
           <h2 className="font-garamond text-[18px] font-semibold ">What?</h2>
