@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Footer } from "@/components/Footer";
+import { cookieToInitialState } from "wagmi";
 
-const inter = Inter({ subsets: ["latin"] });
+import { config } from "@/configwallet";
+import Provider from "@/components/wallet/Provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,9 +17,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialState = cookieToInitialState(config, headers().get("cookie"));
   return (
     <html lang="en">
-      <body className={inter.className}>{children}<Footer /></body>
+      <body>
+        <Provider initialState={initialState}>{children}</Provider>
+        <Footer></Footer>
+      </body>
     </html>
   );
 }

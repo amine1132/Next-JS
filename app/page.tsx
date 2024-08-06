@@ -8,6 +8,7 @@ import mail from "../assets/Social/mail.svg";
 import discord from "../assets/Social/Discord.svg";
 import twitter from "../assets/Social/twitter.svg";
 import { Button } from "@/components/ui/button";
+import { ConnectButton } from "@/components/wallet/ConnectButton";
 import {
   Accordion,
   AccordionContent,
@@ -54,6 +55,7 @@ export default function Home() {
       <p className=" font-garamond text-gray-900 font-serif text-3xl w-full text-center font-medium normal-case not-italic no-underline leading-tight tracking-tighter max-lg:hidden">
         Blockchains encyclopedia
       </p>
+      <ConnectButton />
       <div className=" w-full  flex flex gap-[150px] pt-[5%] pb-0 pl-[5%] pr-[5%] max-lg:hidden">
         <div className="flex flex-col gap-[25px] ">
           <h2 className="font-garamond text-[18px] font-semibold ">What?</h2>
