@@ -11,8 +11,12 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
+<<<<<<< HEAD
+    "axios": "^1.7.3",
+=======
     "@tanstack/react-query": "^5.51.21",
     "@web3modal/wagmi": "^5.0.11",
+>>>>>>> cd8a9aaebcd25c49913dc27af01cb1bd13c99806
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.1.7",
