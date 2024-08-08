@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import Bitcoin from "../assets/Icone/Bitcoin.svg";
@@ -9,6 +11,7 @@ import discord from "../assets/Social/Discord.svg";
 import twitter from "../assets/Social/twitter.svg";
 import { Button } from "@/components/ui/button";
 import { ConnectButton } from "@/components/wallet/ConnectButton";
+import { useAccount } from "wagmi";
 import {
   Accordion,
   AccordionContent,
@@ -21,6 +24,7 @@ import { AccordionHeader } from "../components/AccordionHeader";
 import CryptoWidget from "../components/CryptoWidget";
 
 export default function Home() {
+  const { address, isConnected } = useAccount();
   return (
     <main className="flex  flex-col items-center">
       <div className="z-10 w-full items-center p-[20px] justify-between font-mono text-sm flex">
@@ -56,6 +60,11 @@ export default function Home() {
         Blockchains encyclopedia
       </p>
       <ConnectButton />
+      {isConnected && (
+        <Button className="bg-[#627EEA] hover:bg-[#627EEA]  rounded-sm">
+          Explore
+        </Button>
+      )}
       <div className=" w-full  flex flex gap-[150px] pt-[5%] pb-0 pl-[5%] pr-[5%] max-lg:hidden">
         <div className="flex flex-col gap-[25px] ">
           <h2 className="font-garamond text-[18px] font-semibold ">What?</h2>
